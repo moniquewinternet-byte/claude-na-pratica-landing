@@ -1,0 +1,3 @@
+# Site estatico: publica a raiz do repo (index.html + assets).
+[build]
+  publish = "."
