@@ -542,5 +542,10 @@ src="https://www.facebook.com/tr?id=3140482732829083&ev=PageView&noscript=1"
 alt=""
 /></noscript>
 
+<script>
+/* Persistência de UTM: repassa utm_*, fbclid, ttclid, gclid etc. da URL da landing pros links de checkout do Assiny, pra atribuição não se perder no clique. */
+(function(){try{var q=window.location.search.replace(/^\?/,"");if(!q)return;var links=document.querySelectorAll('a[href*="pay.assiny.com.br"]');for(var i=0;i<links.length;i++){var h=links[i].getAttribute("href");if(!h)continue;links[i].setAttribute("href",h+(h.indexOf("?")===-1?"?":"&")+q);}}catch(e){}})();
+</script>
+
 </body>
 </html>
